@@ -3,9 +3,9 @@
 
     <mat-card-header>
       <div mat-card-avatar class="header-image"></div>
-      <mat-card-title>{{ user | formatName }}</mat-card-title>
+<!--      <mat-card-title>{{ user | formatName }}</mat-card-title>-->
       <mat-card-title>{{ format(user) }}</mat-card-title>
-<!--      <mat-card-subtitle>{{ user.job }}</mat-card-subtitle>-->
+      <mat-card-subtitle>{{ user.job }}</mat-card-subtitle>
     </mat-card-header>
 
     <mat-card-actions>
