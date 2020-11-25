@@ -1,0 +1,19 @@
+<div class="container">
+  <mat-card *ngFor="let user of users">
+
+    <mat-card-header>
+      <div mat-card-avatar class="header-image"></div>
+      <mat-card-title>{{ user | formatName }}</mat-card-title>
+<!--      <mat-card-title>{{ format(user) }}</mat-card-title>-->
+      <mat-card-subtitle>{{ user.job }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-actions>
+      <button mat-raised-button (click)="empty()">Click</button>
+      <div class="mouse-container" (mousemove)="empty()">
+        <p>Mouse move</p>
+      </div>
+    </mat-card-actions>
+
+  </mat-card>
+</div>
